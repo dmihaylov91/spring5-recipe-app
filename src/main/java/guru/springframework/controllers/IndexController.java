@@ -31,6 +31,9 @@ public class IndexController {
 
         System.out.println("Cat Id is: " + categoryOptional.get().getId());
         System.out.println("UOM ID is: " + unitOfMeasureOptional.get().getId());
+        
+        //Dimitar
+        System.out.println("Dimitar find category by ID: " + categoryRepository.findById(2l).get().getDescription());
 
         return "index";
     }
